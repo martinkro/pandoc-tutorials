@@ -1,0 +1,48 @@
+% Habits
+% Security Center/LIU JUN
+% 2018-12-10
+
+# In the morning
+## Getting up
+- Turn off alarm
+- Get out of bed
+
+## Breakfast
+
+::: incremental
+
+- Eat eggs
+- Drink coffee
+
+:::
+
+# In the evening
+## Dinner
+- Eat spaghetti
+- Drink wine
+
+------------------
+![picture of spaghetti](images/girl-4.jpg)
+
+
+## Going to sleep
+- Get in bed
+- Count sheep
+
+# Slide with a pause
+## Page 1
+:::::::::::::: {.columns}
+::: {.column width="40%"}
+Hello,World
+:::
+::: {.column width="60%"}
+XML Pandoc
+:::
+::::::::::::::
+
+## Table Example
+
+| A | B | C |
+|---|---|---|
+| a | b | c |
+
