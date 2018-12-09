@@ -1,5 +1,7 @@
 *.pdf
 *.gz
+*.log
+*.aux
 *.gem
 *.rbc
 /.config
