@@ -2,6 +2,10 @@
 title: Sample Article
 author: Jake Zimmerman
 date: \today
+CJKmonofont: Noto Mono CJK SC
+CJKmainfont: Noto Sans CJK SC
+CJKsansfont: Noto Sans CJK SC
+CJKromanfont: Noto Serif CJK SC
 ---
 
 # Tote Bag Iceland
@@ -36,3 +40,94 @@ scenester, neutra stumptown chambray literally trust fund hoodie. Food truck
 aesthetic lumbersexual tbh. Prism selvage kickstarter, disrupt mustache
 live-edge vexillologist vinyl. Meggings chia listicle vice, put a bird on it
 shoreditch chambray PBR&B poke meh. Chillwave artisan austin sriracha.
+
+## Markdown User Guide
+
+### Chinese
+1. One 中文
+2. Two
+3. Three
+
+### Text
+This text is in *italic*.
+This text is in **bold**.
+And this text is in ***bold-italic***
+
+### Link
+[Text](http://google.com)
+
+### Image
+![Caption](../../images/markdown.png)
+
+![Girl-1](../../images/girl-1.jpg)
+
+![Girl-2](../../images/girl-2.jpg)
+
+### Lists
+* item
+* item
+    * item
+    * item
+* item
+
+1. item
+1. item
+    1. item
+    2. item
+1. item
+
+### Quotes
+> Research is what I'm doing
+when I don't know what I'm doing.
+- Wernher von Braun
+
+### Code
+```c++
+#include <iostream>
+using namespace std;
+int main(int argc ,char* argv[])
+{
+    cout << "Hello,World!" << endl;
+    return 0;
+}
+```
+
+### Tables
+  Right     Left     Center     Default
+-------     ------ ----------   -------
+     12     12        12            12
+    123     123       123          123
+      1     1          1             1
+
+Table:  Demonstration of simple table syntax.
+{#tbl:table}
+
+  Right |    Left   |  Center   |  Default
+-------:|    :------| :----------:|   -------
+     12 |    12     |   12        |    12
+    123  |   123    |   123       |   123
+      1   |  1      |    1        |     1
+
+Table:  Demonstration of simple table syntax.
+{#tbl:table2}
+
+### Footnotes
+Example of a footnote [^0]
+
+### Citations
+This is a very important fact [@citation_example]
+
+### Strikethrough
+~~Strikethrough text~~
+
+### Equations
+Inline equations $\pi$
+
+Block equations
+
+$$
+\pi
+$$ {#eq:pi}
+
+$$s=\sqrt{\frac{1}{N-1}\sum_{i=1}^N(x_i-\overline{x})^{2}}$$
+

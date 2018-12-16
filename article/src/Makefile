@@ -29,6 +29,10 @@ all: $(patsubst %.md,%.pdf,$(wildcard *.md))
 PANDOC_FLAGS =\
 	-f markdown+tex_math_single_backslash \
 	-t latex \
+	--filter pandoc-fignos \
+	--filter pandoc-eqnos \
+	--filter pandoc-tablenos \
+	--filter pandoc-citeproc \
 
 LATEX_FLAGS = \
 
