@@ -5,6 +5,18 @@ pandoc --pdf-engine=xelatex -V mainfont="SimSun" -o sample.pdf sample.md
 pandoc -D latex > mytemplate.tex
 pandoc --pdf-engine=xelatex --template=template.latex -o sample.pdf sample.md
 
+# How install font on Ubuntu
+- Robot
+- Sans
+
+# Install pandoc filters
+- pandoc-citeproc
+- pandoc-attributes
+- pandoc-eqnos
+- pandoc-fignos
+- pandoc-tablenos
+- pandocfilters
+
 https://blog.csdn.net/zhouxiaowei1120/article/details/82818295
 
 # Tex Basics
