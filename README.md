@@ -5,6 +5,23 @@ pandoc --pdf-engine=xelatex -V mainfont="SimSun" -o sample.pdf sample.md
 pandoc -D latex > mytemplate.tex
 pandoc --pdf-engine=xelatex --template=template.latex -o sample.pdf sample.md
 
+# Tracks
+## 如何给标题编号
+--number-sections
+
+## 图编号
+fignos-cleveref: On
+fignos-plus-name: 图
+
+fignos-plus-name
+
+F:\projects\demo-scholar-markdown-docx>pandoc --filter pandoc-fignos --filter pa
+ndoc-citeproc --bibliography=myref.bib --csl=chinese-gb7714-2005-numeric.csl dem
+o-figref.md -o demo-figref.docx
+
+## Custom docx
+pandoc --print-default-data-file reference.docx > myref.docx
+
 # How install font on Ubuntu
 - Robot
 - Sans
@@ -36,3 +53,7 @@ beamer是一个宏包，就和article差不多
 https://jingyan.baidu.com/article/ff411625e229d512e482379c.html
 https://my.oschina.net/zenologo/blog/60160
 [启用字体](https://blog.csdn.net/yanxiangtianji/article/details/17539571)
+
+# References
+[如何用 Markdown 写论文](https://36kr.com/p/5123338.html)
+[markdown语法及pandoc扩展](http://www.bagualu.net/wordpress/archives/5284)
