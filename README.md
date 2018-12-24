@@ -5,6 +5,18 @@ pandoc --pdf-engine=xelatex -V mainfont="SimSun" -o sample.pdf sample.md
 pandoc -D latex > mytemplate.tex
 pandoc --pdf-engine=xelatex --template=template.latex -o sample.pdf sample.md
 
+# Example
+## Beamer
+[BUILDING PRETTY SLIDES USING MARKDOWN AND PANDOC](https://avalz.it/2017/02/01/build-pretty-slides/)
+http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+pandoc -t beamer --pdf-engine=xelatex -o Beamer.pdf Beamer.md
+pandoc -t beamer slides.md -V theme:metropolis -o slides.pdf
+pandoc -t beamer --pdf-engine=xelatex -V theme:metropolis -o Beamer.pdf Beamer.md 
+pandoc -t beamer --pdf-engine=xelatex -V theme:AnnArbor -o Beamer.pdf Beamer.md 
+
+
+## Article
+
 # Tracks
 ## 如何给标题编号
 --number-sections
